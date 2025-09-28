@@ -1,0 +1,11 @@
+# Ne pas suivre les dépendances
+node_modules/
+ 
+# Dossier de build Next.js
+.next/
+ 
+# Fichiers d’environnement (ne jamais les pousser en public)
+.env
+ 
+# Fichier macOS inutile
+.DS_Store
