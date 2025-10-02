@@ -1,4 +1,3 @@
-
 @import 'aos/dist/aos.css';
 @import "tailwindcss";
 
@@ -17,7 +16,7 @@
 }
 
 body {
- background-image: url('/images/Background_home.jpg');
+  /*background-image: url('/images/Background_home.jpg');*/
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -32,9 +31,9 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Couche semi-transparente pour adoucir l'image */
+  background-color: rgba(0, 0, 0, 0.6); 
   z-index: -1;
-  filter: brightness(0.7); /* Rend l'image légèrement pâle */
+  filter: brightness(0.7); 
 }
 
 body > * {

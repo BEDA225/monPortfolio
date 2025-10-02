@@ -4,35 +4,33 @@ export default function About() {
   return (
     <section id="about" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-3xl font-bold text-center text-white mb-12">
+        <h2 className="text-3xl font-bold text-center text-blue-600 mb-12">
           À propos de moi
         </h2>
         
-        {/* Layout avec texte (3/4) et photo (1/4) */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 items-start">
+        {/* Layout avec texte pleine largeur */}
+        <div className="w-full">
           {/* Texte à gauche - occupe 3 colonnes sur 4 */}
-          <div className="lg:col-span-3 space-y-6">
+          <div className="space-y-8">
             {/* Texte principal */}
             <div className="bg-black/30 p-8 rounded-xl shadow-lg backdrop-blur-sm border border-gray-700">
-              <p className="text-gray-200 text-lg leading-relaxed">
+              <p className="text-gray-200  text-lg leading-relaxed">
                 {portfolioData.about}
               </p>
             </div>
-            <br /> <br />
             {/* Informations supplémentaires - Boutons et liens SANS encadrement */}
-            <div>
-              <h3 className="text-xl text-center font-semibold text-white mb-6"></h3>
-              <div className="flex flex-wrap gap-6 items-center justify-center ">
+            <div className="mt-6">
+              <div className="flex flex-wrap gap-6 items-center justify-center m ">
                 {/* Bouton CV avec animations */}
                 <a
-                  href="#"
-                  download
+                  href="/cv/Eric-Beda-CV.pdf"
+                  target="_blank"
                   className="flex items-center font-bold gap-4 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:animate-pulse "
                 >
                   <svg className="w-8 h-8 transition-transform duration-300 hover:rotate-12" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
                   </svg>
-                  Télécharger maintenant mon CV
+                  Voir mon CV
                 </a>
                 
                 {/* Lien GitHub avec animations */}
@@ -74,15 +72,6 @@ export default function About() {
                 </a>
               </div>
             </div>
-          </div>
-          
-          {/* Photo à droite - occupe 1 colonne sur 4 */}
-          <div className="lg:col-span-1 flex justify-center lg:justify-start">
-            <img
-              src="/images/photo_portfolio_About.jpeg"
-              alt="Anazet Beda - Développeur Web"
-              className="rounded-lg shadow-lg w-64 h-80 lg:w-full lg:h-auto object-cover border-4 border-gray-700"
-            />  
           </div>
         </div>
       </div>

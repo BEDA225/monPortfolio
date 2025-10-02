@@ -10,7 +10,7 @@ export const portfolioData = {
   social: {
     github: "https://github.com/BEDA225",
     linkedin: "https://www.linkedin.com/in/anazet-eric-beda-8aaa47323",
-    twitter: "https://twitter.com/votreusername",
+    twitter: "#",
   },
   projects: [
     {
@@ -33,7 +33,7 @@ export const portfolioData = {
   
       image: "/images/image_RestoEtudiant.png",
       tags: ["PHP", "CSS", "JavaScript", "MySQL", "HTML"],
-      sourceCode: "https://github.com/votreusername/projet2",
+      sourceCode: "https://github.com/BEDA225/Projet_restoEtudiant",
       liveDemo: "https://votresite.com/projet2",
     },
     {
@@ -42,9 +42,9 @@ export const portfolioData = {
       description:
         "Un portfolio professionnel mettant en avant mes projets et compétences.",
       image: "/images/Projet3.jpg",
-      tags: ["React", "Tailwind CSS", "JavaScript", "Next.js"],
-      sourceCode: "https://github.com/BEDA225/Projet_restoEtudiant",
-      liveDemo: "https://votresite.com/projet3",
+      tags: ["React", "Tailwind CSS", "JavaScript", "Next.js","Node.js"],
+      sourceCode: "https://github.com/BEDA225/monPortfolio",
+      liveDemo: "https://mon-portfolio-ziqa.vercel.app/",
     },
   ],
   skills: [
@@ -55,10 +55,12 @@ export const portfolioData = {
     { name: "ASP.NET", level: 85 },
     { name: "Java", level: 60 },
     { name: "CSS", level: 85 },
-    { name: "JavaScript", level: 80 },
-    { name: "React", level: 75 },
-    { name: "Next.js", level: 70 },
-    { name: "Tailwind CSS", level: 85 },
+    { name: "JavaScript", level: 65 },
+    { name: "React", level: 60 },
+    { name: "Next.js", level: 60 },
+    { name: "Tailwind CSS", level: 60 },
     { name: "Design Responsive", level: 68 },
   ],
+
+  
 };

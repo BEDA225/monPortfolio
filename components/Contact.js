@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-20 px-4">
       <div className="container mx-auto max-w-4xl text-center">
-        <h2 className="text-3xl font-bold text-white mb-12">Contactez-moi</h2>
+        <h2 className="text-3xl font-bold text-blue-600 mb-12">Contactez-moi</h2>
         <div className="mb-8">
           <p className="text-gray-200 mb-2">
             <strong className="text-white">Email:</strong> {portfolioData.email}
