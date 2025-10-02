@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect} from "react";
+import { useState, useEffect, useCallback} from "react";
 
 export default function AnimationProvider({ children }) {
   useEffect(() => {
@@ -45,7 +45,7 @@ export function useSkillsAnimation(skills) {
   }, [skills]);
 
   // Animation de chargement (vers le bas)
-  const startLoadingAnimation = () => {
+  const startLoadingAnimation = useCallback(() => {
     // Réinitialiser à 0%
     setAnimatedSkills(prev => prev.map(skill => ({
       ...skill,
@@ -64,10 +64,10 @@ export function useSkillsAnimation(skills) {
         );
       }, index * 150); // 150ms entre chaque animation
     });
-  };
+  }, [skills]);
 
   // Animation de déchargement (vers le haut)
-  const startUnloadingAnimation = () => {
+  const startUnloadingAnimation = useCallback(() => {
     const reverseSkills = [...skills].reverse();
     
     reverseSkills.forEach((skill, reverseIndex) => {
@@ -83,7 +83,7 @@ export function useSkillsAnimation(skills) {
         );
       }, reverseIndex * 100); // Plus rapide en déchargement
     });
-  };
+  }, [skills]);
 
   // Observer pour déclencher l'animation selon la direction
   useEffect(() => {
@@ -119,7 +119,7 @@ export function useSkillsAnimation(skills) {
     }
 
     return () => observer.disconnect();
-  }, [scrollDirection, skills]);
+  }, [scrollDirection, skills, startLoadingAnimation, startUnloadingAnimation]);
 
   return { 
     animatedSkills, 

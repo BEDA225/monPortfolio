@@ -34,7 +34,7 @@ const ContactForm = () => {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          Un projet en tête ou envie de discuter ? N'hésitez pas à me contacter !
+          Un projet en tête ou envie de discuter ? N&apos;hésitez pas à me contacter !
         </p>
 
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
@@ -71,7 +71,7 @@ const ContactForm = () => {
               </label>
               <input
                 {...register("email", {
-                  required: "L'email est requis",
+                  required: "L&apos;email est requis",
                   pattern: {
                     value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                     message: "Adresse email invalide",
