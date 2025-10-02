@@ -5,7 +5,7 @@ yarn-debug.log*
 yarn-error.log*
  
 # Dossier de build Next.js
-..next/
+.next/
 out/
 build/
 # Fichiers d’environnement (ne jamais les pousser en public)
