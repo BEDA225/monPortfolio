@@ -41,7 +41,7 @@ export const portfolioData = {
       title: "Portfolio Pro ",
       description:
         "Un portfolio professionnel mettant en avant mes projets et compétences.",
-      image: "/images/Projet3.jpg",
+      image: "/images/im_portf_Eric.png",
       tags: ["React", "Tailwind CSS", "JavaScript", "Next.js","Node.js"],
       sourceCode: "https://github.com/BEDA225/monPortfolio",
       liveDemo: "https://mon-portfolio-ziqa.vercel.app/",
